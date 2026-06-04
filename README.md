@@ -1,4 +1,4 @@
-# GraphQL introspection is allowed
+# GraphQL introspection is allowed 
 
 ## Introspection Query and Visualize 
 ```
@@ -6,6 +6,14 @@
 ```
 ```
 https://apis.guru/graphql-voyager/
+```
+
+## Framework recon
+```
+{"query": "query EngineFingerprint { apollo: __type(name: \"Upload\") { name } apolloFed: __type(name: \"_Service\") { name } hasura1: __type(name: \"String_comparison_exp\") { name } hasura2: __type(name: \"Int_filter\") { name } prisma1: __type(name: \"StringFilter\") { name } prisma2: __type(name: \"DateTimeFilter\") { name } appsync1: __type(name: \"AWSJSON\") { name } appsync2: __type(name: \"AWSTimestamp\") { name } relay: __type(name: \"PageInfo\") { name } postgraphile: __type(name: \"Cursor\") { name } }"}
+```
+```
+{"query": "query { __typename @doesNotExistDirective }"}
 ```
 
 ## Example usage
