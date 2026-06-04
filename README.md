@@ -19,5 +19,7 @@ https://apis.guru/graphql-voyager/
 ## Example usage
 ### Query 
 ```
-{"query":"query { __type(name: \"BlogPost\") { name fields { name args { name type { name } } type { name kind ofType { name kind } } } } }"}
+{
+  "query": "query { getUser(id: 1) { id username password } }"
+}
 ```
